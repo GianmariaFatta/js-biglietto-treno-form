@@ -1,0 +1,14 @@
+body{
+    background-color: #B91450;
+}
+
+[class^="col-"]{
+    border: 2px dashed black;
+    
+    background-color: white;
+}
+
+span{
+    color:black;
+    font-weight: bolder;
+}
