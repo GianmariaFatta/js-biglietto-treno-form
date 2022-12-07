@@ -38,6 +38,9 @@ eraseButton.addEventListener("click", function(){
     kmsElement.value="";
     userName.innerText = " ";
     moneyElement.innerText="";
+    trainElement.innerText="";
+    codElement.innerText="";
+    discountElement.innerText="";
 
     
 })
@@ -75,7 +78,10 @@ genButton.addEventListener("click", function(){
     
     if(isNaN (ageElement.value) || isNaN (kmsElement.value) || (ageElement.value <=0) || (kmsElement.value <=0)){
         moneyElement.innerText= "HAI INSERITO CARATTERI INVALIDI, RIPROVA";
-        userName.innerText =""
+        userName.innerText = " ";
+        trainElement.innerText="";
+        codElement.innerText="";
+        discountElement.innerText="";
     }    
     
     
