@@ -12,10 +12,75 @@
 </head>
 
 <body>  
-    <div class="container d-flex align-items-center justify-content-center">
-        <div class="row">
-        <h1 class="p-3 text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>
-        <div class="col-12 d-flex justify-content-center">
+    <div class="container ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                    <h1 class="p-3 m-5 text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>
+                </div>
+            <div class="col-3">
+                <label for="name" class="text-white h3 text-center"  >Nome e Cognome</label><br>
+                <input type="text" id="name" value="" class="">
+            </div>
+            <div class="col-3">
+                <label for="kms" class="text-white h3 text-center">Km da percorrere</label><br>
+                <input type="number" id="kms" name="fav_language" value="" required>
+            </div>
+            <div class="col-3">
+                <label for="age" class="text-white h3 text-center">Età </label><br>
+                <input type="number" id="age">
+            </div>
+            <div class="col-3 mt-4">
+                
+                <button id="generate" type="button" >GENERA</button>
+                <button id="erase">ANNULLA </button>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 class=" p-3 text-center text-white m-5">IL TUO BIGLIETTO </h1>
+                    <h3 class="text-black">DETTAGLI PASEGGERO</h3>
+                    <hr>
+                </div>
+                <div class="col-4">
+                    <img src="img/train.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-2">
+                    <h3>Nome Passeggero </h3> <span id="username" value=""></span>
+                </div>
+                <div class="col-2">
+                    <h3>Offerta</h3> <span id="discount"></span>
+                </div>
+                <div class="col-2">
+                    <h3>Carrozza</h3> <span id="train"></span>
+
+                </div>
+                <div class="col-2">
+                    <h3>Codice CP</h3> <span id="code"></span>
+                </div>
+                <div class="col-12 d-flex text-black justify-content-end">
+                    <h1 id="money" class="  bounce-in-right"></h1> 
+                </div>
+         
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!-- <div class="col-12 d-flex justify-content-center">
+           
             <div class="d-flex">
                 <label for="name"  >Nome e Cognome</label>
                 <input type="text" id="name" value="" required class="d-block">
@@ -28,7 +93,7 @@
                     <option value="Young">Minorenne</option>
                     <option value="over">over65</option>
                 </select> -->
-                <button id="generate" type="button" >genera</button>
+                <!-- <button id="generate" type="button" >genera</button>
                 <button id="erase">annulla </button>
         </div>
     </div>
@@ -45,7 +110,7 @@
     
 
     </div>
-    <!-- <h1 id="money" class="  bounce-in-right">  </h1> -->
-    
+    <h1 id="money" class="  bounce-in-right">  </h1> -->
+     -->
 </body>
 </html>
