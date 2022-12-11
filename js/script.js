@@ -27,6 +27,7 @@ const ageElement =document.getElementById("age")
 const discountElement=document.getElementById("discount")
 const trainElement=document.getElementById("train")
 const codElement=document.getElementById("code")
+const ticketElement=document.getElementById("ticket")
 
 
 
@@ -42,11 +43,12 @@ eraseButton.addEventListener("click", function(){
     codElement.innerText="";
     discountElement.innerText="";
 
+    ticketElement.classList.add("d-none")
     
 })
 genButton.addEventListener("click", function(){
 
-
+    
     //numero carrozza
     
 
@@ -107,7 +109,7 @@ genButton.addEventListener("click", function(){
         discountElement.innerText="///"
     }
     
-
+    ticketElement.classList.remove("d-none")
     
 });
 
